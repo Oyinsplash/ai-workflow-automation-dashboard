@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <div className="grid gap-6 md:grid-cols-4">
             {
-                dashboardSummary.map((card)=> <SummaryCard icon={card.icon} title={card.title} count={card.count} />)
+                dashboardSummary.map((card)=> <SummaryCard key={card.title} icon={card.icon} title={card.title} count={card.count} />)
             }
           </div>
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
